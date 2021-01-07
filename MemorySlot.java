@@ -3,8 +3,8 @@ public class MemorySlot {
 
     private int start; // the address where the memory slot starts
     private int end;   // the address where the memory slot ends
-    private final int blockStart; // address of where the block starts
-    private final int blockEnd;   // address of where the block ends
+    private int blockStart; // address of where the block starts
+    private  int blockEnd;   // address of where the block ends
     /* The following should always hold true:
      * start >= blockStart
      * end <= blockEnd */
@@ -34,6 +34,8 @@ public class MemorySlot {
     public void setStart(int start) {
         this.start = start;
     }
+
+
 
     public int getEnd() {
         return end;

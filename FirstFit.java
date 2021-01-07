@@ -15,10 +15,11 @@ public class FirstFit extends MemoryAllocationAlgorithm {
          * should return -1. */
         for(int i=0;i<currentlyUsedMemorySlots.size();i++)
         {
-            if(p.getMemoryRequirements()>=(currentlyUsedMemorySlots.get(i).getEnd()-currentlyUsedMemorySlots.get(i).getStart()))
+            if(p.getMemoryRequirements()<=(currentlyUsedMemorySlots.get(i).getBlockEnd()-currentlyUsedMemorySlots.get(i).getBlockStart()))
             {
                 fit=true;
                 address=currentlyUsedMemorySlots.get(i).getStart();
+                break;
             }
         }
         return address;
