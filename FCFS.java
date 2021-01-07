@@ -13,7 +13,7 @@ public class FCFS extends Scheduler {
     public Process getNextProcess() {
         /* TODO: you need to add some code here
          * and change the return value */
-        java.lang.Process p = processes.get(0);
+        Process p = processes.get(0);
         processes.remove(0);
         return p;
     }

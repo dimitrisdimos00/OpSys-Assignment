@@ -14,7 +14,7 @@ public class BestFit extends MemoryAllocationAlgorithm {
          * loaded into if the process fits. In case the process doesn't fit, it
          * should return -1. */
 
-        return address;
+          return address;
     }
 
 }

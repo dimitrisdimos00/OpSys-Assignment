@@ -12,6 +12,9 @@ public class Process {
         this.pcb = new ProcessControlBlock();
     }
 
+
+
+
     // getters - setters
 
 
@@ -25,6 +28,14 @@ public class Process {
 
     public int getMemoryRequirements() {
         return memoryRequirements;
+    }
+    public int getArrivalTime()
+    {
+        return arrivalTime;
+    }
+
+    public int getBurstTime() {
+        return burstTime;
     }
 
     public void setArrivalTime(int arrivalTime) {
