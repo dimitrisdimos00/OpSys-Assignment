@@ -12,7 +12,7 @@ public abstract class Scheduler {
      * processes that are candidates for execution. This will probably
      * differ for different schedulers */
     public abstract void addProcess(java.lang.Process p);
-    
+
     /* the removeProcess() method should remove a process from the list
      * of processes that are candidates for execution. Common for all
      * schedulers. */
