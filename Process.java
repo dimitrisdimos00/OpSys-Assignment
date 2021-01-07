@@ -19,12 +19,14 @@ public class Process {
     public void run() {
         /* TODO: you need to add some code here
          * Hint: this should run every time a process starts running */
+        this.pcb.setState(ProcessState.RUNNING, CPU.clock);
         
     }
     
     public void waitInBackground() {
         /* TODO: you need to add some code here
          * Hint: this should run every time a process stops running */
+        this.pcb.setState(ProcessState.READY, CPU.clock);
         
     }
 
