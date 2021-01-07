@@ -13,6 +13,17 @@ public class BestFit extends MemoryAllocationAlgorithm {
          * Hint: this should return the memory address where the process was
          * loaded into if the process fits. In case the process doesn't fit, it
          * should return -1. */
+        int i=0;
+         int min=currentlyUsedMemorySlots.get(0).getBlockEnd()-currentlyUsedMemorySlots.get(0).getBlockStart();
+         for(i=1;i<currentlyUsedMemorySlots.size();i++)
+         {
+              if(currentlyUsedMemorySlots.get(i).getBlockEnd()-currentlyUsedMemorySlots.get(i).getBlockStart()<min && p.getMemoryRequirements()<=currentlyUsedMemorySlots.get(i).getBlockEnd()-currentlyUsedMemorySlots.get(i).getBlockStart())
+              {
+                  min=currentlyUsedMemorySlots.get(i).getBlockEnd()-currentlyUsedMemorySlots.get(i).getBlockStart();
+                  address=currentlyUsedMemorySlots.get(i).getStart();
+              }
+         }
+
 
           return address;
     }
