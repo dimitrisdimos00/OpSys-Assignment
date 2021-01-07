@@ -11,11 +11,19 @@ public class Process {
         this.memoryRequirements = memoryRequirements;
         this.pcb = new ProcessControlBlock();
     }
-    
+
+    // getters - setters
+
+    public int getMemoryRequirements() {
+        return memoryRequirements;
+    }
+
+    // end of getters - setters
+
     public ProcessControlBlock getPCB() {
         return this.pcb;
     }
-   
+
     public void run() {
         /* TODO: you need to add some code here
          * Hint: this should run every time a process starts running */
