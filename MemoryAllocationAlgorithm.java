@@ -8,5 +8,5 @@ public abstract class MemoryAllocationAlgorithm {
         this.availableBlockSizes = availableBlockSizes;
     }
 
-    public abstract int fitProcess(java.lang.Process p, ArrayList<MemorySlot> currentlyUsedMemorySlots);
+    public abstract int fitProcess(Process p, ArrayList<MemorySlot> currentlyUsedMemorySlots);
 }
