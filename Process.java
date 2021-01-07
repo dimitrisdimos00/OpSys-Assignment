@@ -14,8 +14,29 @@ public class Process {
 
     // getters - setters
 
+
+    public int getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public int getBurstTime() {
+        return burstTime;
+    }
+
     public int getMemoryRequirements() {
         return memoryRequirements;
+    }
+
+    public void setArrivalTime(int arrivalTime) {
+        this.arrivalTime = arrivalTime;
+    }
+
+    public void setBurstTime(int burstTime) {
+        this.burstTime = burstTime;
+    }
+
+    public void setMemoryRequirements(int memoryRequirements) {
+        this.memoryRequirements = memoryRequirements;
     }
 
     // end of getters - setters
