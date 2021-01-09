@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class FCFS extends Scheduler {
 
     public FCFS() {
@@ -13,8 +15,9 @@ public class FCFS extends Scheduler {
     public Process getNextProcess() {
         /* TODO: you need to add some code here
          * and change the return value */
-        Process p = processes.get(0);
-        processes.remove(0);
+        ArrayList<Process> temp=processes;
+        Process p = temp.get(0);
+        temp.remove(0);
         return p;
     }
 }
