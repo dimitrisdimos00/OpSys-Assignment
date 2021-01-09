@@ -40,6 +40,7 @@ public class Process {
         this.memoryRequirements = memoryRequirements;
     }
 
+
     // end of getters - setters
 
     public ProcessControlBlock getPCB() {

@@ -27,12 +27,17 @@ public class CPU {
             i++;
         }
         int j=0;
-        while(j<scheduler.getProcesses().size())
+        int size = scheduler.getProcesses().size();
+        while(j < size)
         {
-             scheduler.getNextProcess();
-             currentProcess=j;
-             while ()
-             j++;
+            Process p = scheduler.getNextProcess();
+            int burstTime = p.getBurstTime();
+            while (burstTime > 0) {
+                tick();
+                burstTime--;
+            }
+            currentProcess=j;
+            j++;
         }
     }
     

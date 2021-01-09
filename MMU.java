@@ -19,6 +19,7 @@ public class MMU {
          * and false if not */
         if (algorithm.fitProcess(p, currentlyUsedMemorySlots) != -1)
             fit = true;
+
         return fit;
     }
 }
