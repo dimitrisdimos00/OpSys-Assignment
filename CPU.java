@@ -27,7 +27,7 @@ public class CPU {
             i++;
         }
         int j=0;
-        while(j<processes.length)
+        while(j<scheduler.getProcesses().size())
         {
              scheduler.getNextProcess();
              currentProcess=j;

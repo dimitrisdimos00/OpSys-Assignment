@@ -20,7 +20,13 @@ public abstract class Scheduler {
         /* TODO: you need to add some code here */
         this.processes.remove(p);
     }
-    
+    //getter
+
+    public ArrayList<Process> getProcesses()
+    {
+        return processes;
+    }
+
     /* the getNextProcess() method should return the process that should
      * be executed next by the CPU */
     public abstract Process getNextProcess();
