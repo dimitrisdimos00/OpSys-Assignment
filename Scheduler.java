@@ -18,7 +18,7 @@ public abstract class Scheduler {
      * schedulers. */
     public void removeProcess(Process p) {
         /* TODO: you need to add some code here */
-        this.processes.remove(p);
+        processes.remove(p);
     }
     //getter
 
